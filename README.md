@@ -1,6 +1,6 @@
 # Theme Switch Login
 
-Projeto de interface de login interativa com funcionalidade de troca de temas (claro/escuro) e variações de cores desenvolvido em **React**.
+Projeto de interface de login interativa com funcionalidade de troca de temas (claro/escuro) e variações de cores desenvolvido em **React** utilizando **Vite**.
 
 ## Como executar
 
@@ -9,11 +9,16 @@ Projeto de interface de login interativa com funcionalidade de troca de temas (c
    git clone https://github.com/KemilyRezende/Theme-Switch-Login.git
   
 2. Acesse o diretório
-3. Instale as dependências
+   ```bash
+   cd Theme-Switch-Login
+   
+4. Instale as dependências
    ```bash
    npm install
    
-4. Inicie o projeto
+5. Inicie o servidor de desenvolvimento
    ```bash
-   npm start
+   npm run dev
+   
+6. Acesse o projeto no navegador: O Vite exibirá o endereço local no terminal.
   
