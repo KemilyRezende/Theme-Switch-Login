@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap'); 
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon{
+    height: 6vh;
+}
+
+.icon:hover{
+    height: 6.2vh;
+    cursor: pointer;
+}
+
+.box{
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover{
+    width: 50vw;
+    height: 100vh;
+    background-color: #0E5829;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 35vw;
+}
+
+.login{
+    background-color: #1a1a1a;
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name{
+    font-family: 'League Spartan';
+    color: #24DB67;
+    font-weight: bolder;
+    font-size: 60px;
+    margin-bottom: 5vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.label{
+    font-family: 'Montserrat' , sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #91EDB3;
+}
+
+.inputText{
+    height: 6.1vh;
+    width: 30vw;
+    background-color: rgba(145, 237, 179, 0.35);
+    border: 2px solid rgba(145, 237, 179, 0.5);
+    border-radius: 10px;
+    padding: 2vh;
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+    color: #91EDB3;
+    outline: none;
+}
+
+.inputText:focus{
+    border: 2px solid rgba(145, 237, 179, 0.75);
+}
+
+
+.boxProfiles{
+    display: flex;
+    gap: 1vw;
+}
+.radioImage{
+    height: 12vh;
+    cursor: pointer; 
+    border: 3px solid transparent;
+    border-radius: 50%;
+}
+
+.radio{
+    display: none;
+}
+
+.radio:checked + .radioImage { 
+    border-color: rgba(145, 237, 179, 0.35);
+}
+.boxColors {
+    display: flex;
+    gap: 1vw;
+}
+
+.boxColors label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: #91EDB3;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.boxColors input[type="radio"] {
+    display: none;
+}
+
+.boxColors input[type="radio"] + span::before {
+    content: "";
+    display: inline-block;
+    width: 3vh;
+    height: 3vh;
+    border: 2px solid #91EDB3; 
+    border-radius: 50%; 
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+.boxColors input[type="radio"]:checked + span::before {
+    background-color: #91EDB3;
+    border-color: #91EDB3;
+}
+
+.button{
+    align-self: center;
+    margin-top: 2vh;
+    background-color: #0E5829;
+    height: 7.5vh;
+    width: 20vw;
+    border: none;
+    border-radius: 15px;
+
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #91EDB3;
+}
+
+.button:hover{
+    cursor: pointer;
+    background-color: #24DB67;
+    color: #fff;
+}
+
+@media screen and (max-width: 920px){
+    .box{
+        flex-direction: column;
+    }
+    .cover{
+        width: 100vw;
+        height: 35vh;
+    }
+    .logo{
+        height: 30vh;
+    }
+    .login{
+        width: 100vw;
+        height: 65vh;
+    }
+    .name{
+        margin-top: 2vh;
+        font-size: 90px;
+    }
+    .inputText{
+        height: 3vh;
+        width: 65vw;
+    }
+    .radioImage{
+        height: 12vw;
+    }
+    .boxColors{
+        gap: 5vh;
+    }
+    .button{
+        height: 6.5vh;
+        width: 40vw;
+        font-size: 30px;
+    }
+} 
+
+@media screen and (max-width: 560px){
+    .name{
+        margin-top: 2vh;
+        font-size: 65px;
+    }
+
+    .label{
+        font-size: 23px;
+    }
+
+    .inputText{
+        height: 3vh;
+        width: 80vw;
+    }
+
+    .radioImage{
+        height: 18vw;
+    }
+
+    .boxColors{
+        gap: 2vh;
+    }
+
+    .button{
+        font-size: 20px;
+    }
+}
