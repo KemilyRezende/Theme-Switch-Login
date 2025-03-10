@@ -14,6 +14,6 @@ Projeto de interface de login interativa com funcionalidade de troca de temas (c
    npm install
    
 4. Inicie o projeto
-  ```bash
-  npm start
+   ```bash
+   npm start
   
