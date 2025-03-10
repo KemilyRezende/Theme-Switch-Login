@@ -1,4 +1,4 @@
-# ThemeSwitch Login
+# Theme Switch Login
 
 Projeto de interface de login interativa com funcionalidade de troca de temas (claro/escuro) e variações de cores desenvolvido em **React**.
 
